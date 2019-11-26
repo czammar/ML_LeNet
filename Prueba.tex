@@ -108,7 +108,7 @@
 %\usepackage{bm}         % For typesetting bold math (not \mathbold)
 %\logo{\includegraphics[height=0.6cm]{yourlogo.eps}}
 %
-\title[LeNet]{LeNet}
+\title[LeNet]{Aprendizaje de máquina - LeNet5}
 \author{Bruno, César}
 \institute[ITAM]
 %\date{November 7, 2019}
@@ -123,16 +123,28 @@
 \titlepage
 \end{frame}
 
-\begin{frame}
-\frametitle{Índice}
- \tableofcontents%[sections]
-\end{frame}
+%\begin{frame}
+%\frametitle{Índice}
+% \tableofcontents%[sections]
+%\end{frame}
 
 \begin{frame}
 \section{Redes convolucionales}
 \frametitle{LeNet-5}
 
-LeNet-5 es una red convolucionar diseñada para reconocimiento de caracteres escritos a mano y a maquina. 
+\begin{itemize}
+	\item LeNet-5 es una arquitectura de red convolucional desarollada por Yann  LeCun, de las primeras en emplearse para el reconocimiento de caracteres escritos a mano.
+	
+	\item Consta de 7 capas, determinadas por parámetros de entrenamiento.
+	
+	\item Se alimenta de imágenes $32 \times 32$ pixeles.
+	
+	\item En total cuenta con 410,000 conexiones pero tiene 90,000 parámetros libres.
+\end{itemize}
+
+
+
+
 
 \end{frame}
 
@@ -142,26 +154,46 @@ LeNet-5 es una red convolucionar diseñada para reconocimiento de caracteres esc
 
 	\begin{figure}
 		\includegraphics[scale=0.27]{images/lenet5_arch.png}
-		\caption{LeNet-5}
+		\caption{Arquitectura de la Red Convolucional LeNet-5}
 	 \end{figure}
 \end{frame}
 
 \begin{frame}
-
+\frametitle{Arquitectura LeNet-5}
 \begin{itemize}
-	\item \textbf{1a capa:} consta de 6 filtros de tamaño 5 X 5 y un paso de 1.
+	\item \textbf{1a capa:} consta de 6 filtros de tamaño 5 X 5 y un stride de 1.
 	
-	\item \textbf{2a capa:} capa de "sub-sampling" o de agrupación promedio de tamaño 2 X 2 y un paso de 2.
+	\item \textbf{2a capa:} capa de \emph{average pooling} de tamaño 2 X 2 y un stride de 2 (sub-sampling)\footnote{Reduce dimensiones de c/feature map retienendo información más importante}
 	
-	\item \textbf{3a capa:} capa convolucional que consta de 16 filtros de tamaño 5 X 5 y un paso de 1.
+	\item \textbf{3a capa:} capa convolucional que consta de 16 filtros de tamaño 5 X 5 y un stride de 1.
 	
-	\item \textbf{4a capa:} es nuevamente una capa de agrupación promedio de tamaño 2 X 2 y de 2 paso.
-	
+	\item \textbf{4a capa:} nuevamente  capa de \emph{average pooling} de tamaño 2 X 2 y de 2 strides.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Arquitectura LeNet-5}
+\begin{itemize}
+
 	\item \textbf{5a capa:} conecta la salida de la cuarta capa (400 parámetros) a una capa completamente conectada de 120 nodos.
 	
-	\item \textbf{6a capa:} una capa igualmente completamente conectada que consta de 84 nodos, que se derivan de las salidas de los 120 nodos de la quinta capa.
+	\item \textbf{6a capa:} una capa igualmente completamente conectada que consta de 84 nodos, de la que se derivan de las salidas de los 120 nodos de la quinta capa.
 	
 	\item \textbf{7a capa:} consiste en clasificar la salida de la última capa en 10 clases relacionadas con los 10 dígitos que se entrenó principalmente para clasificar.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Referencias}
+
+\begin{itemize}
+	\item \textbf{Gradient-Based Learning applied to document recognition}.  Y. Lecun; L. Bottou; Y. Bengio; P. Haffner See http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+	
+	\item \textbf{Página electrónica de Y. Lecun dedicada a la red LeNet} http://yann.lecun.com/exdb/lenet/
 \end{itemize}
 
 \end{frame}

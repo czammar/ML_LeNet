@@ -1,2 +1,2 @@
-\beamer@sectionintoc {1}{Redes convolucionales}{3}{0}{1}
-\beamer@sectionintoc {2}{Arquitectura}{4}{0}{2}
+\beamer@sectionintoc {1}{Redes convolucionales}{2}{0}{1}
+\beamer@sectionintoc {2}{Arquitectura}{3}{0}{2}
