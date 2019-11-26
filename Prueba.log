@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  25 NOV 2019 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.29)  26 NOV 2019 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,11 +1070,11 @@ Overfull \hbox (22.80777pt too wide) in paragraph at lines 159--159
 ] [6
 
 ]
-<images/lenet.png, id=186, 543.02875pt x 422.57875pt>
+<images/lenet.png, id=186, 762.85pt x 550.055pt>
 File: images/lenet.png Graphic file (type png)
 <use images/lenet.png>
 Package pdftex.def Info: images/lenet.png  used on input line 218.
-(pdftex.def)             Requested size: 271.5137pt x 211.28885pt.
+(pdftex.def)             Requested size: 305.1346pt x 220.0181pt.
  [7
 
  <./images/lenet.png>] [8
@@ -1115,7 +1115,7 @@ sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
 sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 
-Output written on Prueba.pdf (8 pages, 161619 bytes).
+Output written on Prueba.pdf (8 pages, 165960 bytes).
 PDF statistics:
  272 PDF objects out of 1000 (max. 8388607)
  241 compressed objects within 3 object streams
